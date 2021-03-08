@@ -6,6 +6,12 @@ class PostsController < ApplicationController
     @posts = Post.includes(:user)
   end
 
+  def hovercard
+    @post = Post.find(params[:id])
+    
+    render layout: false
+  end
+
   # GET /posts/1 or /posts/1.json
   def show
   end

@@ -1,0 +1,7 @@
+<div class="results-card">
+  <ul>
+    <% @posts.each do |post| %>
+      <li><%= post.title %> written by <i><%= post.user.name%></i></li>
+    <% end %>
+  </ul>
+</div> 

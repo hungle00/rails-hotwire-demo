@@ -3,6 +3,7 @@
 <div class="container">
   <div class="card">
     <h1>Wall Posts</h1>
+    <br />
     <% @posts.each do |post| %>
       <div class="post">
         <p><%= post.user.name %> posted at: <em><%= post.created_at.strftime("%l:%M %P") %></em></p>
